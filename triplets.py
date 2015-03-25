@@ -6,7 +6,7 @@ def take(n, iterable):
 
 def consume(n, iterable):
   "Return items from iterable, starting from n"
-  return list(itertools.islice(tokens, n, None))
+  return list(itertools.islice(iterable, n, None))
 
 tokens = "Isla djevojka kroz sumu kad tamo vuk iskoci na nju".split()
 
