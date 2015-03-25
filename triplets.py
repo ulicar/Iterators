@@ -11,7 +11,4 @@ def consume(n, iterable):
 tokens = "Isla djevojka kroz sumu kad tamo vuk iskoci na nju".split()
 
 for step in range(len(tokens)):
-    ending = consume(step, tokens)
-    triplet = take(3, consume)
-    print ' '.join(triplet)
-
+    print ' '.join(take(3, consume(step, tokens)))
